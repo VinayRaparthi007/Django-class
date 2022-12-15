@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>site testing</title>
+    </head>
+    <body>
+        <div>
+            <h1>
+                {{ name }}
+            </h1>
+        </div>
+
+        <div>
+            {% for i in data %}
+            <h1>
+                brand:{{i.0}}
+                price:{{i.1}}
+                color:{{i.2}}
+            </h1>
+            {% endfor %}
+        </div>
+    </body>
+</html>
