@@ -116,15 +116,12 @@ def analyze(request):
 
 def new(request):
     data = MobileList.objects.all()
-    # brand=['vivo','realme']
-    # price=['100','200']
-    # color=['red','blue']
-    # ram=['4gb','8gb']
-    # storage=['128','215']
-
-    print(data)
-
+    
     context = {
         'data':data,
     }
-    return render(request,'new.html',context)
+    return render(request,'index.html',context)
+
+
+
+
